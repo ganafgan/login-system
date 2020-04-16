@@ -23,9 +23,7 @@ export default class Login extends Component {
                                         <input type="text" className='form-control mb-3' placeholder='Email'/>
                                         {/* <p className='card-text'>Password</p> */}
                                         <input type="text" className='form-control mb-5'placeholder='Password'/>
-                                        <input type="button" className='btn btn-primary' value='Login' style={{width:'100%'}}/>
-
-                                        
+                                        <input type="button" className='btn btn-primary' value='Login' style={{width:'100%'}}/> 
                                     </div>
                                 </div>
                             </div>

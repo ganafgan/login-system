@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
+
 import Login from './pages/Login';
 import Home from './pages/Home';
 import Register from './pages/Register'
@@ -8,20 +9,18 @@ import Register from './pages/Register'
 class App extends React.Component{
 	render(){
 		return(
-			<div>
-				<Route exact path='/'>
-					<Home/>
-				</Route>
-
-				<Route path='/login'>
+			<BrowserRouter>
+			
+				<Route  exact path='/'>
 					<Login/>
 				</Route>
 
 				<Route path='/register'>
 					<Register/>
 				</Route>
-			</div>
-		)
+		
+			</BrowserRouter>
+	)
 	}
 }
 
